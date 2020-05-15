@@ -1,4 +1,4 @@
-// Version 1
+// Version 1 full hibernet solution
 // resource used : https://www.youtube.com/watch?v=JR7-EdxDSf0
 
 import org.hibernate.*;
