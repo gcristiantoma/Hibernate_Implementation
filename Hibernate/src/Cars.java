@@ -1,7 +1,9 @@
 import javax.persistence.*;
 import org.hibernate.*;
 
-@Entity
+import java.util.Objects;
+
+@Entity(name = "Cars")
 @Table(name="cars") // the table name from sql
 public class Cars {
     @Id
@@ -46,5 +48,20 @@ public class Cars {
                 ", model='" + model + '\'' +
                 ", engine=" + engine +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Cars)) return false;
+        Cars cars = (Cars) o;
+        return getId() == cars.getId() &&
+                Double.compare(cars.getEngine(), getEngine()) == 0 &&
+                getModel().equals(cars.getModel());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getModel(), getEngine());
     }
 }
