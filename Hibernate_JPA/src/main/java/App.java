@@ -1,4 +1,4 @@
-// version 2
+// version 2 suing JPA
 // resources used : https://www.youtube.com/watch?v=KHohVibqePw
 
 
