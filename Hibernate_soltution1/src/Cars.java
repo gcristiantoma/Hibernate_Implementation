@@ -2,7 +2,7 @@ import javax.persistence.*;
 import org.hibernate.*;
 
 @Entity
-@Table(name="cars")
+@Table(name="cars") // the table name from sql
 public class Cars {
     @Id
     @Column(name = "id")
@@ -37,5 +37,14 @@ public class Cars {
 
     public void setEngine(double engine) {
         this.engine = engine;
+    }
+
+    @Override
+    public String toString() {
+        return "Cars{" +
+                "id=" + id +
+                ", model='" + model + '\'' +
+                ", engine=" + engine +
+                '}';
     }
 }

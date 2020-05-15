@@ -18,6 +18,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="com.github.bj-tydic:async-mysql-connector:1.7" level="project" />
   </component>
   <component name="POM File Configuration" pomFile="" />
 </module>

@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Hibernate_solution2" />
-        <module name="Hibernate_soltution2" />
+        <module name="MavenHibernate" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MavenHibernate" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
